@@ -4,6 +4,7 @@
     ./visual.nix
     ./languages.nix
     ./binds.nix
+    ./mini.nix
   ];
 
   vim = {
