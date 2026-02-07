@@ -2,6 +2,7 @@
   imports = [
     ./options.nix
     ./visual.nix
+    ./languages.nix
     ./binds.nix
   ];
 
