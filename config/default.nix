@@ -1,5 +1,6 @@
 {
   imports = [
+    ./lualine.nix
     ./autocmds.nix
     ./options.nix
     ./visual.nix
