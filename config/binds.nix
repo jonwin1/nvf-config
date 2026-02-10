@@ -31,15 +31,22 @@ in
     keymaps = [
       #         "mode" "key" "action" "description"
       (mkKeymap "n" "<Esc>" "<cmd>nohlsearch<CR>" "Clear search highlight")
+
       (mkKeymap "v" "J" ":m '>+1<CR>gv=gv" "Move selection down")
       (mkKeymap "v" "K" ":m '<-2<CR>gv=gv" "Move selection down")
+
       (mkKeymap "n" "n" "nzzzv" "Center line on search next")
       (mkKeymap "n" "N" "Nzzzv" "Center line on search previous")
-      (mkKeymap "x" "<leader>p" "\"_dP" "Paste without copying to clipboard")
-      (mkKeymap [ "n" "v" ] "<leader>d" "\"_d" "Delete without saving to clipboard")
+
       (mkKeymap "v" "<" "<gv" "Indent while keeping selection")
       (mkKeymap "v" ">" ">gv" "Indent while keeping selection")
-      (mkKeymap "n" "<leader>u" "<CMD>UndotreeToggle<CR>" "Toggle Undotree")
+
+      (mkKeymap "x" "<leader>p" "\"_dP" "Paste without copying to clipboard")
+      (mkKeymap [ "n" "v" ] "<leader>d" "\"_d" "Delete without saving to clipboard")
+
+      (mkKeymap "n" "<leader>s" ":%s/\\<<C-r><C-w>\\>//gI<Left><Left><Left>"
+        "Search and replace word under cursor"
+      )
     ];
   };
 }
