@@ -16,6 +16,7 @@
 
       scrolloff = 4;
       sidescrolloff = 4;
+      colorcolumn = "80";
 
       wrap = false;
     };
