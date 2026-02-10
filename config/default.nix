@@ -1,5 +1,6 @@
 {
   imports = [
+    ./telescope.nix
     ./lualine.nix
     ./autocmds.nix
     ./options.nix
