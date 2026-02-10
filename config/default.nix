@@ -1,5 +1,6 @@
 {
   imports = [
+    ./autocmds.nix
     ./options.nix
     ./visual.nix
     ./languages.nix
