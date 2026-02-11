@@ -1,13 +1,14 @@
 {
   imports = [
-    ./telescope.nix
-    ./lualine.nix
     ./autocmds.nix
-    ./options.nix
-    ./visual.nix
-    ./languages.nix
     ./binds.nix
+    ./languages.nix
+    ./lualine.nix
     ./mini.nix
+    ./neowiki.nix
+    ./options.nix
+    ./telescope.nix
+    ./visual.nix
   ];
 
   vim = {

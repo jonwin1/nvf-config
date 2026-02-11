@@ -74,6 +74,22 @@
         "type": "github"
       }
     },
+    "neowiki": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1769688296,
+        "narHash": "sha256-Rs+B98033CWCtdHs3aFDTO53DnWnlg1jTAaANGKRvio=",
+        "owner": "echaya",
+        "repo": "neowiki.nvim",
+        "rev": "87a9746538ddc69378116a884d09d560fe4b858e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "echaya",
+        "repo": "neowiki.nvim",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1770197578,
@@ -131,6 +147,7 @@
     },
     "root": {
       "inputs": {
+        "neowiki": "neowiki",
         "nixpkgs": "nixpkgs",
         "nvf": "nvf"
       }
