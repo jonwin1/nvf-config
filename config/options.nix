@@ -7,6 +7,8 @@
     undoFile.enable = true;
     searchCase = "smart";
 
+    utility.sleuth.enable = true; # Detect indentation options
+
     options = {
       mouse = "";
 
