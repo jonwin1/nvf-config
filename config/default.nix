@@ -3,6 +3,7 @@
   imports = [
     ./autocmds.nix
     ./binds.nix
+    ./harpoon.nix
     ./languages.nix
     ./lualine.nix
     ./mini.nix
