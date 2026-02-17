@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./autocmds.nix
@@ -15,5 +16,9 @@
     viAlias = true;
     vimAlias = true;
     enableLuaLoader = true;
+
+    extraPackages = [
+      pkgs.nixfmt
+    ];
   };
 }

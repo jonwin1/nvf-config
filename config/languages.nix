@@ -17,7 +17,11 @@
       kotlin.enable = true;
       lua.enable = true;
       markdown.enable = true;
-      nix.enable = true;
+      nix = {
+        enable = true;
+        lsp.servers = [ "nixd" ];
+        format.type = [ "nixfmt" ];
+      };
       python.enable = true;
       rust.enable = true;
       sql.enable = true;
