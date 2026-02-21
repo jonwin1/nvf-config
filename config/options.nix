@@ -21,9 +21,10 @@
       colorcolumn = "80";
 
       wrap = false;
+      cursorline = true;
 
       # First <Tab> shows menu and completes longest common string, after that
-      # it cycles through full matches.
+      # cycle through full matches.
       wildmode = "noselect:longest,full";
     };
   };
