@@ -2,6 +2,7 @@
 {
   imports = [
     ./autocmds.nix
+    ./git.nix
     ./binds.nix
     ./harpoon.nix
     ./languages.nix
