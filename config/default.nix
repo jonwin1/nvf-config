@@ -11,6 +11,7 @@
     ./neowiki.nix
     ./options.nix
     ./telescope.nix
+    ./toggletern.nix
     ./visual.nix
   ];
 
