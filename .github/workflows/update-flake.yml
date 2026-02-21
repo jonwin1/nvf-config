@@ -1,27 +1,34 @@
-name: Update flake.lock
+name: Weekly Flake Update
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 17 * * FRI"
+    - cron: "0 16 * * FRI"  # Fridays at 17 (CET) or 18 (CEST)
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: DeterminateSystems/determinate-nix-action@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Update flake.lock
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+
+      - name: Configure git
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          nix flake update --commit-lock-file
+
+      - name: Update flake
+        run: nix flake update --commit-lock-file
 
       - name: Flake check
         run: nix flake check --all-systems
@@ -31,8 +38,8 @@ jobs:
 
       - name: Push
         run: |
-          if git log -1 --pretty=%B | grep -q "flake.lock"; then
-            git push origin main
+          if [ "$(git rev-list --count HEAD ^origin/main)" -gt 0 ]; then
+            git push
           else
-            echo "No changes to flake.lock"
+            echo "No changes to push"
           fi
