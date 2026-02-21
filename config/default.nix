@@ -13,6 +13,7 @@
     ./telescope.nix
     ./todo.nix
     ./toggletern.nix
+    ./undotree.nix
     ./visual.nix
   ];
 
