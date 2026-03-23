@@ -25,6 +25,7 @@
       python.enable = true;
       rust.enable = true;
       sql.enable = true;
+      tex.enable = true;
       ts.enable = true;
       yaml.enable = true;
       zig.enable = true;
