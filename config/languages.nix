@@ -37,7 +37,7 @@
         "en"
         "sv"
       ];
-      programmingWordlist.enable = true;
+      # programmingWordlist.enable = true;
     };
 
     lsp = {
