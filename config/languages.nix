@@ -31,14 +31,14 @@
       zig.enable = true;
     };
 
-    # spellcheck = {
-    #   enable = true;
-    #   languages = [
-    #     "en"
-    #     "sv"
-    #   ];
-    #   programmingWordlist.enable = true;
-    # };
+    spellcheck = {
+      enable = true;
+      languages = [
+        "en"
+        "sv"
+      ];
+      programmingWordlist.enable = true;
+    };
 
     lsp = {
       enable = true;
