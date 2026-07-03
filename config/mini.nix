@@ -6,10 +6,6 @@
       diff.enable = true;
       icons.enable = true;
 
-      indentscope = {
-        enable = true;
-        setupOpts.draw.animation = lib.generators.mkLuaInline ''require("mini.indentscope").gen_animation.none()'';
-      };
       cursorword.enable = true;
       trailspace.enable = true;
 
