@@ -32,8 +32,14 @@ in
       (mkKeymap "v" "J" ":m '>+1<CR>gv=gv" "Move selection down")
       (mkKeymap "v" "K" ":m '<-2<CR>gv=gv" "Move selection down")
 
-      (mkKeymap "n" "n" "nzzzv" "Center line on search next")
-      (mkKeymap "n" "N" "Nzzzv" "Center line on search previous")
+      (mkKeymap "n" "<C-d>" "<C-d>zz" "Move cursor down half page and center")
+      (mkKeymap "n" "<C-u>" "<C-u>zz" "Move cursor up half page and center")
+
+      (mkKeymap "n" "n" "nzzzv" "Center next search result")
+      (mkKeymap "n" "N" "Nzzzv" "Center prev search result")
+
+      (mkKeymap "n" "<C-j>" "<cmd>cnext<CR>zz" "Center next quickfix item")
+      (mkKeymap "n" "<C-k>" "<cmd>cprev<CR>zz" "Center prev quickfix item")
 
       (mkKeymap "v" "<" "<gv" "Indent while keeping selection")
       (mkKeymap "v" ">" ">gv" "Indent while keeping selection")
