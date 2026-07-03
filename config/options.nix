@@ -22,6 +22,7 @@
 
       wrap = false;
       cursorline = true;
+      winborder = "rounded";
 
       # First <Tab> shows menu and completes longest common string, after that
       # cycle through full matches.

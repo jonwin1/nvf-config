@@ -15,13 +15,8 @@ in
         enable = true;
         setupOpts.preset = "helix";
         register = {
-          #   "<leader>f" = " Picker";
-          #   "<leader>g" = " Git";
-          #   "<leader>d" = " Debug";
+          "<leader>g" = " Git";
           "<leader>l" = "LSP";
-          #   "<leader>c" = " Spellcheck";
-          #   "<leader>cl" = "󰗊 Language";
-          #   "<leader>o" = " Obsidian";
         };
       };
 
