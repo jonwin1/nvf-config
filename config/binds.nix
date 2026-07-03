@@ -15,8 +15,10 @@ in
         enable = true;
         setupOpts.preset = "helix";
         register = {
-          "<leader>g" = " Git";
+          "<leader>g" = "Git";
           "<leader>l" = "LSP";
+          "<leader>w" = "Wiki";
+          "<leader>t" = "Toggle [Gitsigns]";
         };
       };
 
