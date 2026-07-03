@@ -4,14 +4,13 @@
     mini = {
       # General workflow
       diff.enable = true;
-      icons.enable = true;
 
+      # Appearance
       cursorword.enable = true;
-      trailspace.enable = true;
-
-      tabline.enable = true;
-      starter.enable = true;
+      icons.enable = true;
       notify.enable = true;
+      starter.enable = true;
+      trailspace.enable = true;
     };
   };
 }
