@@ -11,13 +11,11 @@
       blink-indent = {
         enable = true;
         setupOpts = {
-          static.char = "▏";
+          static.char = "┆";
           scope = {
             indent_at_cursor = true;
-            char = "▏";
-            highlights = [
-              "BlinkIndentBlue"
-            ];
+            char = "┃";
+            highlights = [];
           };
         };
       };
