@@ -2,8 +2,11 @@
   vim.navigation.harpoon = {
     enable = true;
     mappings = {
-      file4 = "<C-ö>";
-      listMarks = "<C-h>";
+      listMarks = "<leader>h";
+      file1 = "<leader>j";
+      file2 = "<leader>k";
+      file3 = "<leader>l";
+      file4 = "<leader>ö";
     };
   };
 }
