@@ -2,6 +2,8 @@
 {
   vim = {
     mini = {
+      # General workflow
+      diff.enable = true;
       icons.enable = true;
 
       indentscope = {
