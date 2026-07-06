@@ -15,8 +15,8 @@ in
         enable = true;
         setupOpts.preset = "helix";
         register = {
-          "<leader>g" = "Git";
-          "<leader>l" = "LSP";
+          "<leader>c" = "Code";
+          "<leader>g" = "Goto";
           "<leader>w" = "Wiki";
           "<leader>fm" = null; # Remove Cellular Automation default
         };
@@ -40,6 +40,8 @@ in
 
       (mkKeymap "n" "<C-j>" "<cmd>cnext<CR>zz" "Center next quickfix item")
       (mkKeymap "n" "<C-k>" "<cmd>cprev<CR>zz" "Center prev quickfix item")
+      (mkKeymap "n" "<C-l>" "<cmd>lnext<CR>zz" "Center next loclist item")
+      (mkKeymap "n" "<C-h>" "<cmd>lprev<CR>zz" "Center prev loclist item")
 
       (mkKeymap "v" "<" "<gv" "Indent while keeping selection")
       (mkKeymap "v" ">" ">gv" "Indent while keeping selection")
@@ -52,6 +54,13 @@ in
       )
 
       (mkKeymap "n" "<leader>fx" "<cmd>Ex<CR>" "File Explorer (Netrw)")
+
+      (mkKeymap "n" "<leader>cl" "<cmd>lua vim.diagnostic.setloclist()<CR>"
+        "Open diagnostics in location list"
+      )
+      (mkKeymap "n" "<leader>cq" "<cmd>lua vim.diagnostic.setqflist()<CR>"
+        "Open diagnostics in quickfix list"
+      )
     ];
   };
 }
