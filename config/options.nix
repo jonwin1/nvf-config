@@ -16,8 +16,7 @@
       shiftwidth = 0;
       smartindent = true;
 
-      scrolloff = 4;
-      sidescrolloff = 4;
+      sidescrolloff = 5;
       colorcolumn = "80";
 
       wrap = false;

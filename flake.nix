@@ -7,6 +7,10 @@
       url = "github:echaya/neowiki.nvim";
       flake = false;
     };
+    stay-centered = {
+      url = "github:arnamak/stay-centered.nvim";
+      flake = false;
+    };
   };
 
   outputs =
@@ -14,6 +18,7 @@
       nixpkgs,
       nvf,
       neowiki,
+      stay-centered,
       ...
     }:
     {
@@ -26,7 +31,7 @@
           ];
 
           extraSpecialArgs = {
-            inherit neowiki;
+            inherit neowiki stay-centered;
           };
         }).neovim;
 
