@@ -39,27 +39,5 @@
       ];
       # programmingWordlist.enable = true;
     };
-
-    lsp = {
-      enable = true;
-      trouble.enable = true;
-      otter-nvim.enable = true;
-    };
-
-    treesitter = {
-      autotagHtml = true;
-    };
-
-    autocomplete.blink-cmp = {
-      enable = true;
-      mappings = {
-        close = "<C-e>";
-        confirm = "<C-y>";
-        next = "<C-n>";
-        previous = "<C-p>";
-      };
-    };
-
-    snippets.luasnip.enable = true;
   };
 }

@@ -1,0 +1,7 @@
+{
+  vim = {
+    lsp = {
+      enable = true;
+    };
+  };
+}

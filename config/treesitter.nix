@@ -1,0 +1,7 @@
+{
+  vim = {
+    treesitter = {
+      autotagHtml = true;
+    };
+  };
+}
