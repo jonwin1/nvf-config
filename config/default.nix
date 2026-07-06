@@ -9,7 +9,6 @@
     ./mini.nix
     ./neowiki.nix
     ./options.nix
-    ./stay-centered.nix
     ./telescope.nix
     ./todo.nix
     ./toggletern.nix
