@@ -18,7 +18,7 @@ in
           "<leader>g" = "Git";
           "<leader>l" = "LSP";
           "<leader>w" = "Wiki";
-          "<leader>t" = "Toggle [Gitsigns]";
+          "<leader>fm" = null; # Remove Cellular Automation default
         };
       };
 
@@ -50,6 +50,8 @@ in
       (mkKeymap "n" "<leader>s" ":%s/\\<<C-r><C-w>\\>//gI<Left><Left><Left>"
         "Search and replace word under cursor"
       )
+
+      (mkKeymap "n" "<leader>fx" "<cmd>Ex<CR>" "File Explorer (Netrw)")
     ];
   };
 }
