@@ -5,16 +5,16 @@
       enableTreesitter = true;       # Enable treesitter grammar
       enableExtraDiagnostics = true; # Enable nvim-lint diagnostics
 
-      assembly.enable = true;
+      # assembly.enable = true;
       bash.enable = true;
       clang.enable = true;
-      css.enable = true;
+      # css.enable = true;
       go.enable = true;
-      haskell.enable = true;
-      html.enable = true;
+      # haskell.enable = true;
+      # html.enable = true;
       java.enable = true;
-      json.enable = true;
-      kotlin.enable = true;
+      # json.enable = true;
+      # kotlin.enable = true;
       lua.enable = true;
       markdown.enable = true;
       nix = {
@@ -23,11 +23,11 @@
         format.type = [ "nixfmt" ];
       };
       python.enable = true;
-      rust.enable = true;
-      sql.enable = true;
+      # rust.enable = true;
+      # sql.enable = true;
       tex.enable = true;
-      typescript.enable = true;
-      yaml.enable = true;
+      # typescript.enable = true;
+      # yaml.enable = true;
       zig.enable = true;
     };
 
