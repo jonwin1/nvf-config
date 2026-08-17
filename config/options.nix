@@ -1,9 +1,5 @@
 {
   vim = {
-    clipboard = {
-      enable = true;
-      registers = "unnamedplus";
-    };
     undoFile.enable = true;
     searchCase = "smart";
 

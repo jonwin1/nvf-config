@@ -42,6 +42,8 @@ in
 
       (mkKeymap "x" "<leader>p" "\"_dP" "Paste without copying to clipboard")
       (mkKeymap [ "n" "v" ] "<leader>d" "\"_d" "Delete without saving to clipboard")
+      (mkKeymap [ "n" "v" ] "<leader>y" "\"+y" "Yank to system clipboard")
+      (mkKeymap "n" "<leader>Y" "\"+Y" "(yy) (y$) Yank to system clipboard")
 
       (mkKeymap "n" "<leader>s" ":%s/\\<<C-r><C-w>\\>//gI<Left><Left><Left>"
         "Search and replace word under cursor"
