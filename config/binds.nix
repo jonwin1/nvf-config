@@ -57,6 +57,8 @@ in
       (mkKeymap "n" "<leader>cq" "<cmd>lua vim.diagnostic.setqflist()<CR>"
         "Open diagnostics in quickfix list"
       )
+
+      (mkKeymap "n" "<leader>fs" "<cmd>Telescope spell_suggest<CR>" "Spelling Suggestions [Telescope]")
     ];
   };
 }
