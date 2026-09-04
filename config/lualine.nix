@@ -3,77 +3,89 @@
     statusline.lualine = {
       enable = true;
 
-      sectionSeparator = {
-        left = "";
-        right = "";
-      };
+      setupOpts = {
+        options = {
+          section_separators = {
+            left = "";
+            right = "";
+          };
+          component_separators = {
+            left = "";
+            right = "";
+          };
+        };
 
-      activeSection = {
-        a = [
-          ''
-            { "mode" }
-          ''
-        ];
-
-        b = [
-          ''
+        sections = {
+          lualine_a = [
             {
-              "branch",
-              icon = "",
+              "@1" = "mode";
             }
-          ''
-          ''
-            { "diff" }
-          ''
-        ];
+          ];
 
-        c = [
-          ''
+          lualine_b = [
             {
-              "filename",
-              path = 1,
-              symbols = {modified = " ", readonly = " "},
+              "@1" = "branch";
+              icon = "";
             }
-          ''
-        ];
-
-        x = [
-          ''
             {
-              "searchcount",
-              maxcount = 999,
-              timeout = 120,
+              "@1" = "diff";
             }
-          ''
-        ];
+          ];
 
-        y = [
-          ''
+          lualine_c = [
             {
-              "lsp_status",
-              icon = " ",
+              "@1" = "filename";
+              path = 1;
               symbols = {
-                done = "",
-              },
+                modified = " ";
+                readonly = " ";
+              };
             }
-          ''
-          ''
-            {
-              "diagnostics",
-              sources = {"nvim_lsp", "nvim_diagnostic", "nvim_workspace_diagnostic", "vim_lsp", "coc"},
-              symbols = {error = "󰅙 ", warn = " ", info = " ", hint = "󰌵 "},
-            }
-          ''
-        ];
+          ];
 
-        z = [
-          ''
-            { "progress" }
-          ''
-          ''
-            { "location" }
-          ''
-        ];
+          lualine_x = [
+            {
+              "@1" = "searchcount";
+              maxcount = 999;
+              timeout = 120;
+            }
+          ];
+
+          lualine_y = [
+            {
+              "@1" = "lsp_status";
+              icon = " ";
+              symbols = {
+                done = "";
+              };
+            }
+            {
+              "@1" = "diagnostics";
+              sources = [
+                "nvim_lsp"
+                "nvim_diagnostic"
+                "nvim_workspace_diagnostic"
+                "vim_lsp"
+                "coc"
+              ];
+              symbols = {
+                error = "󰅙 ";
+                warn = " ";
+                info = " ";
+                hint = "󰌵 ";
+              };
+            }
+          ];
+
+          lualine_z = [
+            {
+              "@1" = "progress";
+            }
+            {
+              "@1" = "location";
+            }
+          ];
+        };
       };
     };
 
