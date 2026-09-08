@@ -12,7 +12,7 @@
       shiftwidth = 0;
       smartindent = true;
 
-      colorcolumn = "80";
+      colorcolumn = "80,120";
 
       wrap = false;
       cursorline = true;
