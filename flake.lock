@@ -34,11 +34,11 @@
     "neowiki": {
       "flake": false,
       "locked": {
-        "lastModified": 1777377189,
-        "narHash": "sha256-nqPZaJLUc4J0vliLUB9nYbqzatTeXjD9rw+nqjdDlBg=",
+        "lastModified": 1791075230,
+        "narHash": "sha256-LEhAOBIKUpk5B8YUK/OnIVWdw5LYlH3D5kRedjFezBA=",
         "owner": "echaya",
         "repo": "neowiki.nvim",
-        "rev": "85dddf6057b07d4d6772b2f90e754a18e958a865",
+        "rev": "482073ccc67772382b7f65def5e54cb1bf900713",
         "type": "github"
       },
       "original": {
@@ -49,11 +49,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1790822859,
-        "narHash": "sha256-69xHQhAeMAD2wDXO7T2pcOZIF9Sga2W+JkmY2a11Ops=",
+        "lastModified": 1791456040,
+        "narHash": "sha256-H83yz/do+hjOO0uujHyH8RgtIQP2v7Mw+cLwcZK/xKc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "c59305bab2065cfecc4944690d9eedbb56f3a9fa",
+        "rev": "e7439b6b14ad3cc35d05608ebca9bce01a25f5f8",
         "type": "github"
       },
       "original": {
@@ -72,11 +72,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790797021,
-        "narHash": "sha256-H2vA5yUaS58Wtdp46piMbRqSQe3Qn716i/oZPYoyhp8=",
+        "lastModified": 1791488733,
+        "narHash": "sha256-9rIjqnq43mKaiUCv0DBe8H0HFZQue0fADosuJxemoaU=",
         "owner": "NotAShelf",
         "repo": "nvf",
-        "rev": "2477cb0a5f394df36ddc72867c2657225d93d157",
+        "rev": "01d245e20e19c9e283fce3b0db8719c2a6bba5f5",
         "type": "github"
       },
       "original": {
